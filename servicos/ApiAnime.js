@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const apiDeputados = axios.create({
+const ApiAnimes = axios.create({
     baseURL: "https://api.jikan.moe/v4/"
 })
 
-export default apiDeputados
+export default ApiAnimes

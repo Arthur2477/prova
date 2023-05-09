@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Rodape = () => {
+const Rd = () => {
   return (
     <div style={{width: '100%'}} className='bg-secondary text-white text-center position-fixed bottom-0'>
       <p>Rodapé</p>
@@ -8,4 +8,4 @@ const Rodape = () => {
   )
 }
 
-export default Rodape
+export default Rd

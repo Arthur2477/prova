@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React from 'react'
 import { Card, Col, Row } from 'react-bootstrap'
 
-const Galeria = (props) => {
+const Lista = (props) => {
 
     const size = props.size || 2
     const link = props.link || '/filmes/'
@@ -32,4 +32,4 @@ const Galeria = (props) => {
     )
 }
 
-export default Galeria
+export default Lista

@@ -1,5 +1,5 @@
 import Header from '@/components/Header'
-import apiAnimes from '@/services/apiAnimes'
+import ApiAnimes from '@/services/apiAnimes'
 import Link from 'next/link'
 import React from 'react'
 import { Button, Container, Table } from 'react-bootstrap'
@@ -39,7 +39,7 @@ const index = (props) => {
 export default index
 
 export async function getServerSideProps(context) {
-    const resultado = await apiAnimes.get("/AN")
+    const resultado = await ApiAnimes.get("/AN")
     const animes = resultado.data.data
     return {
         props: {

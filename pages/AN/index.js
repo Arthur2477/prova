@@ -8,7 +8,7 @@ const index = (props) => {
   const animes = props.animes
   return (
     <>
-    <Header titulo="Animes"/> 
+    <Header titulo="AN"/> 
     <Container>
     <Table striped bordered hover>
       <thead>
@@ -22,7 +22,7 @@ const index = (props) => {
       <tbody>
       {animes.map(a => (
            <tr>
-           <td> <Link href={"/animes/" + a.mal_id}> <Button> Detalhes</Button> </Link></td>
+           <td> <Link href={"/AN/" + a.mal_id}> <Button> Detalhes</Button> </Link></td>
            <td>{a.title}</td>
            <td>{a.duration}</td>
            <td>{a.year}</td>
@@ -39,7 +39,7 @@ const index = (props) => {
 export default index
 
 export async function getServerSideProps(context) {
-    const resultado = await apiAnimes.get("/anime")
+    const resultado = await apiAnimes.get("/AN")
     const animes = resultado.data.data
     return {
         props: {
